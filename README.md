@@ -16,7 +16,9 @@ sudo curl https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM
 
 #export DAG to Airflow from terminal
 
-export AIRFLOW_HOME=/home/project/airflow cp my_first_dag.py $AIRFLOW_HOME/dags
+export AIRFLOW_HOME=/home/project/airflow
+ cp ETL_toll_data.py $AIRFLOW_HOME/dags
+
 
 
 
