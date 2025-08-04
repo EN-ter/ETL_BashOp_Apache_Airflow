@@ -7,11 +7,15 @@ unzip_data >> extract_data_from_csv >> extract_data_from_tsv >> extract_data_fro
 
 #Shell commands prior to exporting to Airflow
 #make directory, change permissions, get tolldata
+
 sudo mkdir -p /home/project/airflow/dags/finalassignment/staging
+
 sudo chmod -R 777 /home/project/airflow/dags/finalassignment
+
 sudo curl https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0250EN-SkillsNetwork/labs/Final%20Assignment/tolldata.tgz -o /home/project/airflow/dags/finalassignment/tolldata.tgz
 
 #export DAG to Airflow from terminal
+
 export AIRFLOW_HOME=/home/project/airflow cp my_first_dag.py $AIRFLOW_HOME/dags
 
 
